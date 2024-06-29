@@ -336,7 +336,7 @@ section{
     transition-delay: .3s;
 }
 
-.skills .box-container .box:hover .content h3{
+.skills .box-container .box: hover .content h3{
     transform: translateY(0rem);
     opacity: 1;
 }
@@ -349,49 +349,80 @@ section{
 
 .heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: var(--yellow);
 }
 
 .profile {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 50px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
 }
 
 .personal-info, .internship-details {
     background: #fff;
-    padding: 60px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
+@media (min-width: 768px) {
+    .personal-info, .internship-details {
+        padding: 60px;
+    }
+}
+
 .personal-info h3, .internship-details h2 {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #444;
 }
 
 .personal-info h3 span, .internship-details h2 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #27ae60;
+}
+
+@media (min-width: 768px) {
+    .personal-info h3, .internship-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .personal-info h3 span, .internship-details h2 {
+        font-size: 2rem;
+    }
 }
 
 .internship-details ul {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .internship-details ul {
+        font-size: 1.5rem;
+    }
 }
 
 .internship-details ul li {
     margin-bottom: 10px;
     color: #666;
 }
+
 .about .row{
     display: flex;
     align-items: center;
