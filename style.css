@@ -423,71 +423,94 @@ section{
     color: #666;
 }
 
-.about .row{
+.about .row {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
-.about .row .info{
-    flex:1 1 48rem;
-    padding:2rem 1rem;
-    padding-left: 6rem;
+.about .row .info {
+    flex: 1 1 100%;
+    padding: 2rem 1rem;
+    padding-left: 2rem;
 }
 
-.about .row .info h3{
-    font-size: 2rem;
-    color:var(--yellow);
-    padding:1rem 0;
+@media (min-width: 768px) {
+    .about .row .info {
+        flex: 1 1 48rem;
+        padding-left: 6rem;
+    }
+}
+
+.about .row .info h3 {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    padding: 1rem 0;
     font-weight: normal;
 }
 
-.about .row .info h3 span{
-    color:#27ae60;
-    padding:0 .5rem;
+@media (min-width: 768px) {
+    .about .row .info h3 {
+        font-size: 2rem;
+    }
 }
 
-.about .row .counter{
-    flex:1 1 48rem;
+.about .row .info h3 span {
+    color: #27ae60;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.about .row .counter .box{
-    width:20rem;
-    background:#222;
+@media (min-width: 768px) {
+    .about .row .counter {
+        flex: 1 1 48rem;
+    }
+}
+
+.about .row .counter .box {
+    width: 100%;
+    background: #222;
     text-align: center;
     padding: 2rem;
-    margin:2rem;
+    margin: 2rem 0;
 }
 
-.about .row .counter .box span{
-    font-size: 4rem;
-    color:var(--yellow);
+@media (min-width: 768px) {
+    .about .row .counter .box {
+        width: 20rem;
+        margin: 2rem;
+    }
 }
 
-.about .row .counter .box h3{
-    font-size: 2rem;
-    color:#fff;
+.about .row .counter .box span {
+    font-size: 2.5rem;
+    color: var(--yellow);
 }
 
+@media (min-width: 768px) {
+    .about .row .counter .box span {
+        font-size: 4rem;
+    }
+}
 
+.about .row .counter .box h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+    .about .row .counter .box h3 {
+        font-size: 2rem;
+    }
+}
 
 /* media queries  */
 
