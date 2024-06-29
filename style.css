@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-: root{
+:root{
     --green:#27ae60;
-    --Black:#444;
+    --black:#444;
     --light-color:#777;
     --bg-color:#e6e6e6;
     --border:.1rem solid rgba(0,0,0,.2);
@@ -33,7 +33,7 @@ body{
     padding-left: 30rem;
 }
 
-body. active{
+body.active{
     --black:#fff;
     --light-color:#ddd;
     --bg-color:#222;
@@ -61,7 +61,7 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-.btn: hover{
+.btn:hover{
     box-shadow: var(--box-shadow-inset);
     color:var(--green);
 }
@@ -196,7 +196,7 @@ section{
 
 @media (min-width: 768px) {
     .home .content h3 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 }
 
