@@ -263,10 +263,12 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* Ensures content wraps on smaller devices */
 }
 
 .info {
     width: 80%;
+    max-width: 1200px; /* Maximum width for larger screens */
 }
 
 .academic-level {
@@ -275,6 +277,12 @@ section{
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.academic-level:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Adds a slight lift on hover */
 }
 
 .academic-level h3 span {
@@ -288,6 +296,35 @@ section{
     font-size: 1.8rem;
     color: #555;
 }
+
+@media (max-width: 768px) {
+    .info {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .academic-level h3 span {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .academic-level p {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .academic-level {
+        padding: 15px; /* Adjust padding for very small screens */
+    }
+
+    .academic-level h3 span {
+        font-size: 1.8rem; /* Further adjust font size for very small screens */
+    }
+
+    .academic-level p {
+        font-size: 1.2rem; /* Further adjust font size for very small screens */
+    }
+}
+
 
 .certifications .box-container{
     display: flex;
