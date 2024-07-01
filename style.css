@@ -446,6 +446,12 @@ section{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.personal-info:hover, .internship-details:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Adds a slight lift on hover */
 }
 
 @media (min-width: 768px) {
@@ -491,11 +497,6 @@ section{
 .internship-details ul li {
     margin-bottom: 10px;
     color: #666;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .about .row {
