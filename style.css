@@ -456,6 +456,11 @@ section{
     color: #666;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .about .row {
     display: flex;
     align-items: center;
@@ -544,6 +549,89 @@ section{
         font-size: 2rem;
     }
 }
+
+.footer {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Unique hover effects for the footer */
+.footer:hover {
+    background-color: black;
+}
+
+.footer:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0));
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0));
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.footer-content p:hover {
+    color: #27ae60;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #1e90ff; /* Change to your desired hover color */
+}
+
 
 /* media queries  */
 
