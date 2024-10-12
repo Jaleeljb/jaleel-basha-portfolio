@@ -411,7 +411,7 @@ section{
     opacity: 1;
 }
 
-.internship {
+.Work-Experience {
     padding: 50px;
     background-color: transparent;
     font-family: 'Arial', sans-serif;
@@ -440,7 +440,7 @@ section{
     }
 }
 
-.personal-info, .internship-details {
+.personal-info, .Work-Experience-details {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
@@ -449,52 +449,52 @@ section{
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.personal-info:hover, .internship-details:hover {
+.personal-info:hover, .Work-Experience-details:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px); /* Adds a slight lift on hover */
 }
 
 @media (min-width: 768px) {
-    .personal-info, .internship-details {
+    .personal-info, .Work-Experience-details {
         padding: 60px;
     }
 }
 
-.personal-info h3, .internship-details h2 {
+.personal-info h3, .Work-Experience-details h2 {
     margin-bottom: 15px;
     font-size: 1.25rem;
     color: #444;
 }
 
-.personal-info h3 span, .internship-details h2 {
+.personal-info h3 span, .Work-Experience-details h2 {
     font-weight: bold;
     font-size: 1.75rem;
     color: #27ae60;
 }
 
 @media (min-width: 768px) {
-    .personal-info h3, .internship-details h2 {
+    .personal-info h3, .Work-Experience-details h2 {
         font-size: 1.5rem;
     }
 
-    .personal-info h3 span, .internship-details h2 {
+    .personal-info h3 span, .Work-Experience-details h2 {
         font-size: 2rem;
     }
 }
 
-.internship-details ul {
+.Work-Experience-details ul {
     list-style-type: disc;
     padding-left: 20px;
     font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
-    .internship-details ul {
+    .Work-Experience-details ul {
         font-size: 1.5rem;
     }
 }
 
-.internship-details ul li {
+.Work-Experience-details ul li {
     margin-bottom: 10px;
     color: #666;
 }
