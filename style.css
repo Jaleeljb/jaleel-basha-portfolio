@@ -69,6 +69,7 @@ section{
 .heading{
     text-align: center;
     font-size: 5rem;
+    font-family: Playfair Display;
     color:var(--black);
     text-transform: uppercase;
     padding-bottom: 2rem;
@@ -77,6 +78,8 @@ section{
 .heading span{
     color:var(--green);
     text-transform: uppercase;
+    font-family: Playfair Display;
+
 }
 
 .header {
@@ -124,28 +127,6 @@ section{
     }
 }
 
-.header .user h3 {
-    color: var(--black);
-    font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-    .header .user h3 {
-        font-size: 2.5rem;
-    }
-}
-
-.header .user p {
-    color: var(--green);
-    font-size: 1.2rem;
-}
-
-@media (min-width: 768px) {
-    .header .user p {
-        font-size: 1.5rem;
-    }
-}
-
 .header .navbar {
     padding-top: 1rem;
 }
@@ -153,9 +134,10 @@ section{
 .header .navbar a {
     display: block;
     margin: 1rem 0;
-    padding: 0.7rem;
+    padding: 1rem;
     border-radius: 5rem;
     font-size: 1.5rem;
+    font-family:  Playfair Display;
     box-shadow: var(--box-shadow);
     color: var(--black);
 }
@@ -189,6 +171,7 @@ section{
 
 .home .content h3 {
     font-size: 3rem;
+    font-family: Lora;
     color: var(--black);
     line-height: 1.1;
     text-transform: uppercase;
@@ -202,6 +185,7 @@ section{
 
 .home .content p {
     font-size: 1.2rem;
+    font-family: Playfair Display;
     color: var(--green);
     padding-bottom: 0.5rem;
 }
@@ -288,12 +272,14 @@ section{
 .academic-level h3 span {
     color: #27ae60;
     font-size: 2.5rem;
+    font-family: Lora;
     font-weight: bold;
 }
 
 .academic-level p {
     margin: 5px 0;
     font-size: 1.8rem;
+    font-family: Lora;
     color: #555;
 }
 
@@ -462,13 +448,15 @@ section{
 
 .personal-info h3, .Work-Experience-details h2 {
     margin-bottom: 15px;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
+    font-family: Lora;
     color: #444;
 }
 
 .personal-info h3 span, .Work-Experience-details h2 {
     font-weight: bold;
     font-size: 1.75rem;
+    font-family: Lora;
     color: #27ae60;
 }
 
@@ -496,6 +484,8 @@ section{
 
 .Work-Experience-details ul li {
     margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-family: Lora;
     color: #666;
 }
 
@@ -522,6 +512,7 @@ section{
 
 .about .row .info h3 {
     font-size: 1.5rem;
+    font-family: Lora;
     color: var(--yellow);
     padding: 1rem 0;
     font-weight: normal;
@@ -535,6 +526,8 @@ section{
 
 .about .row .info h3 span {
     color: #27ae60;
+    font-size: 2.3rem;
+    font-family: Lora;
     padding: 0 .5rem;
 }
 
@@ -614,7 +607,7 @@ section{
 .footer-content p {
     margin: 0;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Lora;
     transition: transform 0.3s, color 0.3s;
 }
 
