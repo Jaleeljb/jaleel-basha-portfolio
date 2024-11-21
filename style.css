@@ -566,6 +566,8 @@ section{
 @media (min-width: 768px) {
     .about .row .counter .box span {
         font-size: 4rem;
+        font-family: Lora;
+
     }
 }
 
