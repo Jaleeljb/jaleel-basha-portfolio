@@ -235,7 +235,7 @@ section{
 
 
 .academics {
-    font-family: 'Arial', sans-serif;
+    font-family: Lora;
     background: transparent;
     padding: 20px;
     border-radius: 10px;
@@ -352,7 +352,7 @@ section{
 }
 
 .skills .box-container .box{
-    height: 25rem;
+    height: 20rem;
     border-radius: .5rem;
     overflow:hidden;
     box-shadow: var(--box-shadow);
@@ -398,7 +398,7 @@ section{
 .Work-Experience {
     padding: 50px;
     background-color: transparent;
-    font-family: 'Arial', sans-serif;
+    font-family: Lora;
 }
 
 .heading {
