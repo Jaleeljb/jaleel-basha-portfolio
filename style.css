@@ -509,7 +509,7 @@ section{
 }
 
 .about .row .info h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: Lora;
     color: var(--yellow);
     padding: 1rem 0;
@@ -518,15 +518,15 @@ section{
 
 @media (min-width: 768px) {
     .about .row .info h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
 .about .row .info h3 span {
     color: #27ae60;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: Lora;
-    padding: 0 .5rem;
+    padding: 0.5rem;
 }
 
 .about .row .counter {
