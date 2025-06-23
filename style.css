@@ -481,99 +481,69 @@ section{
     color: #666;
 }
 
+
+.about {
+    padding: 2rem;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Lora", serif;
+    color: var(--black);
+}
+
 .about .row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.about .row .info {
-    flex: 1 1 100%;
-    padding: 2rem 1rem;
-    padding-left: 2rem;
+/* Info section */
+.about .info {
+    flex: 1 1 50%;
+    padding-right: 20px;
 }
 
-@media (min-width: 768px) {
-    .about .row .info {
-        flex: 1 1 48rem;
-        padding-left: 6rem;
-    }
+.about .info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    color: var(--black);
 }
 
-.about .row .info h3 {
-    font-size: 1.8rem;
-    font-family: Lora;
-    color: var(--yellow);
-    padding: 1rem 0;
-    font-weight: normal;
+.about .info h3 span {
+    color: var(--green);
 }
 
-@media (min-width: 768px) {
-    .about .row .info h3 {
-        font-size: 1.8rem;
-    }
-}
-
-.about .row .info h3 span {
-    color: #27ae60;
-    font-size: 2rem;
-    font-family: Lora;
-    padding: 0.5rem;
-}
-
-.about .row .counter {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-    .about .row .counter {
-        flex: 1 1 48rem;
-    }
-}
-
-.about .row .counter .box {
-    width: 100%;
-    background: #222;
+/* Image section */
+.about .image {
+    flex: 1 1 40%;
     text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
 }
 
-@media (min-width: 768px) {
-    .about .row .counter .box {
-        width: 20rem;
-        margin: 2rem;
+.about .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .about .row {
+        flex-direction: column;
+        text-align: center;
     }
-}
 
-.about .row .counter .box span {
-    font-size: 2.5rem;
-    color: var(--yellow);
-}
-
-@media (min-width: 768px) {
-    .about .row .counter .box span {
-        font-size: 4rem;
-        font-family: Lora;
-
+    .about .info {
+        padding-right: 0;
     }
-}
 
-.about .row .counter .box h3 {
-    font-size: 1.3rem;
-    color: #fff;
-}
-
-@media (min-width: 768px) {
-    .about .row .counter .box h3 {
-        font-size: 2rem;
-        font-family: Lora;
-
+    .about .image {
+        margin-top: 2rem;
     }
 }
 
