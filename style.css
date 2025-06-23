@@ -482,70 +482,99 @@ section{
 }
 
 
-.about {
-    padding: 2rem;
-}
-
-.about .heading {
-    text-align: center;
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    font-family: "Lora", serif;
-    color: var(--black);
-}
-
 .about .row {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
 }
 
-/* Image section first on mobile */
-.about .image {
-    text-align: center;
+.about .row .info {
+    flex: 1 1 100%;
+    padding: 2rem 1rem;
+    padding-left: 2rem;
 }
 
-.about .image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Info section */
-.about .info {
-    text-align: left;
-}
-
-.about .info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-family: "Playfair Display", serif;
-    color: var(--black);
-}
-
-.about .info h3 span {
-    color: var(--green);
-}
-
-/* Desktop layout: image left, info right */
 @media (min-width: 768px) {
-    .about .row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .about .image,
-    .about .info {
-        flex: 1 1 48%;
-    }
-
-    .about .info {
-        padding-left: 2rem;
+    .about .row .info {
+        flex: 1 1 48rem;
+        padding-left: 6rem;
+        font-family: Lora;
     }
 }
 
+.about .row .info h3 {
+    font-size: 1.8rem;
+    font-family: Lora;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .about .row .info h3 {
+        font-size: 1.8rem;
+    }
+}
+
+.about .row .info h3 span {
+    color: #27ae60;
+    font-size: 2rem;
+    font-family: Lora;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .about .row .counter {
+        flex: 1 1 48rem;
+    }
+}
+
+.about .row .counter .box {
+    width: 100%;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .about .row .counter .box {
+        width: 20rem;
+        margin: 2rem;
+    }
+}
+
+.about .row .counter .box span {
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+    .about .row .counter .box span {
+        font-size: 4rem;
+    }
+}
+
+.about .row .counter .box h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .about .row .counter .box h3 {
+        font-size: 2rem;
+        font-family: Lora;
+    }
+}
 .footer {
     background-color: #27ae60;
     color: #fff;
