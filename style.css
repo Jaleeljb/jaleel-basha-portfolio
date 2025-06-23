@@ -490,45 +490,41 @@ section{
     padding: 1rem 0;
 }
 
-/* —— PHOTO  —— */
-.about .row .image {            /* assume the photo element uses .image */
+/* === IMAGE STYLING === */
+.about .row .image {
     flex: 1 1 100%;
-    order: 2;                   /* push photo BELOW the text blocks on mobile ≤ 767 px */
+    order: 2; /* Move image below .info on mobile */
 }
 
-/* —— INFO  —— */
+/* === INFO SECTION === */
 .about .row .info {
     flex: 1 1 100%;
     padding: 2rem 1rem;
     padding-left: 2rem;
+    order: 1; /* Ensure text is above image on mobile */
 }
 
 @media (min-width: 768px) {
-    /* photo returns to its normal place on larger screens */
     .about .row .image {
         flex: 1 1 48rem;
-        order: 0;               /* normal flow on desktop */
+        order: 0; /* Normal flow on desktop */
     }
 
     .about .row .info {
         flex: 1 1 48rem;
         padding-left: 6rem;
         font-family: Lora;
+        order: 0;
     }
 }
 
+/* === HEADINGS === */
 .about .row .info h3 {
     font-size: 1.8rem;
     font-family: Lora;
     color: var(--yellow);
     padding: 1rem 0;
     font-weight: normal;
-}
-
-@media (min-width: 768px) {
-    .about .row .info h3 {
-        font-size: 1.8rem;
-    }
 }
 
 .about .row .info h3 span {
@@ -538,7 +534,7 @@ section{
     padding: 0 .5rem;
 }
 
-/* —— COUNTER  —— */
+/* === COUNTER SECTION === */
 .about .row .counter {
     flex: 1 1 100%;
     display: flex;
@@ -589,6 +585,7 @@ section{
         font-family: Lora;
     }
 }
+
 
 .footer {
     background-color: #27ae60;
