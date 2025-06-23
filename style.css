@@ -490,6 +490,13 @@ section{
     padding: 1rem 0;
 }
 
+/* —— PHOTO  —— */
+.about .row .image {            /* assume the photo element uses .image */
+    flex: 1 1 100%;
+    order: 2;                   /* push photo BELOW the text blocks on mobile ≤ 767 px */
+}
+
+/* —— INFO  —— */
 .about .row .info {
     flex: 1 1 100%;
     padding: 2rem 1rem;
@@ -497,6 +504,12 @@ section{
 }
 
 @media (min-width: 768px) {
+    /* photo returns to its normal place on larger screens */
+    .about .row .image {
+        flex: 1 1 48rem;
+        order: 0;               /* normal flow on desktop */
+    }
+
     .about .row .info {
         flex: 1 1 48rem;
         padding-left: 6rem;
@@ -525,6 +538,7 @@ section{
     padding: 0 .5rem;
 }
 
+/* —— COUNTER  —— */
 .about .row .counter {
     flex: 1 1 100%;
     display: flex;
@@ -575,6 +589,7 @@ section{
         font-family: Lora;
     }
 }
+
 .footer {
     background-color: #27ae60;
     color: #fff;
