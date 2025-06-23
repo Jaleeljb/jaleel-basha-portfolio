@@ -502,8 +502,8 @@ section{
 
 /* Info section */
 .about .info {
-    flex: 1 1 50%;
-    padding-left: 100px;
+    flex: 1 1 70%;
+    padding-left: 80px;
 }
 
 .about .info h3 {
