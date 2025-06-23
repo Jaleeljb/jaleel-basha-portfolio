@@ -503,11 +503,11 @@ section{
 /* Info section */
 .about .info {
     flex: 1 1 50%;
-    padding-left: 100px;
+    padding-left: 45px;
 }
 
 .about .info h3 {
-    font-size: 1.6rem; /* Default for desktop */
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
     font-family: "Playfair Display", serif;
     color: var(--black);
@@ -516,7 +516,6 @@ section{
 .about .info h3 span {
     color: var(--green);
 }
-
 
 /* Image section */
 .about .image {
@@ -535,6 +534,8 @@ section{
     .about .row {
         flex-direction: column;
         text-align: center;
+        font-size: 1.6;
+        font-family: "Playfair Display", serif;
     }
 
     .about .info {
