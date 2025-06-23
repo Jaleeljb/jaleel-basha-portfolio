@@ -537,7 +537,7 @@ section{
         text-align: center;
     }
 
-    .about .info {
+    .about .info h3{
         padding-right: 0;
         font-family: "Playfair Display", serif;
         font-size: 1.6rem;
