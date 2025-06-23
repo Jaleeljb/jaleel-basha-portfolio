@@ -151,18 +151,19 @@ section{
     box-shadow: var(--box-shadow-inset);
     color: var(--green);
 }
-/* Home section – desktop styling for every viewport */
+
+/* Base styles for mobile-first */
 .home {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 0;               /* 0rem everywhere (desktop value) */
+    padding-top: 20rem;
 }
 
 .home .content h3 {
-    font-size: 6rem;              /* desktop size on all screens */
+    font-size: 3rem; /* smaller for mobile */
     font-family: "Lora", serif;
     color: var(--black);
     line-height: 1.1;
@@ -170,7 +171,7 @@ section{
 }
 
 .home .content p {
-    font-size: 2rem;              /* desktop size on all screens */
+    font-size: 1.2rem; /* smaller for mobile */
     font-family: "Playfair Display", serif;
     color: var(--green);
     padding-bottom: 0.5rem;
@@ -178,18 +179,18 @@ section{
 
 .home .share {
     position: relative;
-    top: 10rem;                   /* desktop offset on all screens */
+    top: 5rem;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
     padding: 1rem;
 }
 
 .home .share a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
     margin: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--black);
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
@@ -200,6 +201,31 @@ section{
     color: var(--green);
 }
 
+/* Larger screens (tablet and desktop) */
+@media (min-width: 768px) {
+    .home {
+        padding-top: 0;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+    }
+
+    .home .content p {
+        font-size: 2rem;
+    }
+
+    .home .share {
+        top: 10rem;
+    }
+
+    .home .share a {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+    }
+}
 
 
 .academics {
