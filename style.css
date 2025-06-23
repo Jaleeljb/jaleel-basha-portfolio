@@ -503,19 +503,28 @@ section{
 /* Info section */
 .about .info {
     flex: 1 1 50%;
-    padding-left: 40px;
-    font-family: "Playfair Display", serif;
+    padding-left: 100px;
 }
 
 .about .info h3 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Default for desktop */
     margin-bottom: 1.5rem;
     font-family: "Playfair Display", serif;
     color: var(--black);
 }
+
 .about .info h3 span {
     color: var(--green);
 }
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .about .info h3 {
+        font-size: 1.6rem; /* Reduced size for mobile */
+        font-family: "Playfair Display", serif; /* Same font style retained */
+    }
+}
+
 
 /* Image section */
 .about .image {
