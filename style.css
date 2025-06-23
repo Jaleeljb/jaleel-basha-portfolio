@@ -517,14 +517,6 @@ section{
     color: var(--green);
 }
 
-/* Responsive styles for mobile screens */
-@media (max-width: 768px) {
-    .about .info h3 {
-        font-size: 1.6rem; /* Reduced size for mobile */
-        font-family: "Playfair Display", serif; /* Same font style retained */
-    }
-}
-
 
 /* Image section */
 .about .image {
@@ -547,6 +539,8 @@ section{
 
     .about .info {
         padding-right: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
     }
 
     .about .image {
