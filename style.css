@@ -503,7 +503,7 @@ section{
 /* Info section */
 .about .info {
     flex: 1 1 50%;
-    padding-left: 45px;
+    padding-left: 40px;
 }
 
 .about .info h3 {
@@ -534,8 +534,6 @@ section{
     .about .row {
         flex-direction: column;
         text-align: center;
-        font-size: 1.6;
-        font-family: "Playfair Display", serif;
     }
 
     .about .info {
