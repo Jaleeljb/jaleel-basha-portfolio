@@ -488,7 +488,7 @@ section{
 
 .about .heading {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     font-family: "Lora", serif;
     color: var(--black);
@@ -496,16 +496,25 @@ section{
 
 .about .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 2rem;
+}
+
+/* Image section first on mobile */
+.about .image {
+    text-align: center;
+}
+
+.about .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 /* Info section */
 .about .info {
-    flex: 1 1 50%;
-    padding-right: 20px;
+    text-align: left;
 }
 
 .about .info h3 {
@@ -519,31 +528,21 @@ section{
     color: var(--green);
 }
 
-/* Image section */
-.about .image {
-    flex: 1 1 40%;
-    text-align: center;
-}
-
-.about .image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
+/* Desktop layout: image left, info right */
+@media (min-width: 768px) {
     .about .row {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about .image,
+    .about .info {
+        flex: 1 1 48%;
     }
 
     .about .info {
-        padding-right: 0;
-    }
-
-    .about .image {
-        margin-top: 2rem;
+        padding-left: 2rem;
     }
 }
 
